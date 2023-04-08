@@ -1,0 +1,77 @@
+//@import-normalize;
+
+:global {
+  html, body {
+    height: 100%;
+
+    * {
+      box-sizing: border-box;
+    }
+  }
+
+  html {
+    ::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 60px;
+      background-color: #c9cbce;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 60px;
+      background-color: #f6f6f7;
+    }
+  }
+
+  body {
+    margin: 0;
+    background-color: #fff;
+    color: #45536c;
+    font-style: normal;
+    font-size: 14px;
+    font-family: 'Taipei Sans TC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;
+    line-height: 1.42857;
+
+    text-decoration-skip-ink: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    > div {
+      color: #45536c;
+    }
+  }
+
+  #root {
+    display: flex;
+    height: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+  }
+
+  a {
+    color: #0052cc;
+    transition-duration: 0s, 0.15s;
+
+    &:hover {
+      color: #0065ff;
+    }
+  }
+}
+
+.container {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  flex: 1 0;
+  flex-direction: column;
+}

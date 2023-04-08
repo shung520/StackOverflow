@@ -1,0 +1,16 @@
+.tagWrapper {
+  display: flex;
+
+  .tag {
+    margin-right: 10px;
+    padding: 5px 10px;
+    width: fit-content;
+    border: 1px solid #add9e6;
+    border-radius: 10px;
+
+    &.active {
+      background-color: #add9e6;
+      color: #fff;
+    }
+  }
+}
