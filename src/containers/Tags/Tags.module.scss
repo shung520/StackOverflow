@@ -1,5 +1,7 @@
 .tagWrapper {
   display: flex;
+  padding: 10px 0;
+  overflow-x: auto;
 
   .tag {
     margin-right: 10px;
@@ -7,6 +9,7 @@
     width: fit-content;
     border: 1px solid #add9e6;
     border-radius: 10px;
+    cursor: pointer;
 
     &.active {
       background-color: #add9e6;

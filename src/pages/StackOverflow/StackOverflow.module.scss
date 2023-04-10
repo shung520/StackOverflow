@@ -1,5 +1,17 @@
 .wrapper {
-  padding: 20px;
-  max-width: 100vh;
+  position: relative;
   overflow: scroll;
+
+  .searchArea {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    transition: top 0.3s linear;
+  }
+
+  .listArea {
+    padding: 0 20px 5px;
+  }
 }
